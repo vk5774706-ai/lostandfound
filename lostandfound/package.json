@@ -1,0 +1,13 @@
+{
+  "name": "college-lost-and-found-portal",
+  "version": "1.0.0",
+  "description": "Full-stack College Lost & Found Portal built with React, Node.js, Express, and Supabase PostgreSQL (PERN/MERN Stack)",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm run dev --prefix server\" \"npm run dev --prefix lostandfound\"",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix lostandfound"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
